@@ -1,0 +1,15 @@
+import '/src/assets/backup_before_tailwind/main.css'
+import '/src/assets/tailwind.css'
+
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+
+import App from '/src/App.vue'
+import router from '/src/router/index.js'
+
+const app = createApp(App)
+
+app.use(createPinia())
+app.use(router)
+
+app.mount('#app')
