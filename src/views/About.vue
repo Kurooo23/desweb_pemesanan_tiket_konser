@@ -128,7 +128,7 @@ watch(() => route.fullPath, () => (sidebarOpen.value = false))
 
   /* === Hamburger fixed di kanan atas === */
   .menu-button {
-    @apply fixed top-4 right-4 w-9 h-7 flex flex-col justify-between border-0 bg-transparent cursor-pointer z-[100];
+    @apply fixed top-4 right-4 w-9 h-7 flex flex-col justify-between border-0 bg-transparent cursor-pointer z-100;
   }
   .menu-button span { @apply h-[3px] rounded-full bg-black/80; }
   /* Kontras saat di atas hero oranye */
