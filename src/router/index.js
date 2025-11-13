@@ -8,6 +8,7 @@ const router = createRouter({
   routes: [
     { path: '/', name: 'login', component: Login },
     { path: '/home', name: 'home', component: HomeView },
+    { path: '/about', name: 'about', component: () => import('@/views/About.vue') },
     { path: '/profile', name: 'profile', component: () => import('@/views/Profile.vue')},
     { path: '/logout', name: 'logout', component: () => import('@/views/LogoutConfirm.vue') },
     { path: '/wallet', name: 'wallet', component: () => import('@/views/Wallet.vue') },
