@@ -1,7 +1,7 @@
 <script setup>
 import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import SideNavSB from '@/components/SideNavSB.vue'
+import DrawerNav from '@/components/DrawerNav.vue'
 
 const route = useRoute()
 const sidebarOpen = ref(false)
@@ -37,7 +37,7 @@ function onTopUp() {
     </header>
 
     <!-- SIDE NAV -->
-    <SideNavSB v-model="sidebarOpen" extra-class="wallet-sb" />
+    <DrawerNav v-model="sidebarOpen" />
 
     <!-- MAIN CONTENT -->
     <main class="wallet-main">
@@ -156,11 +156,6 @@ function onTopUp() {
 
 .wallet-tx-date {
   @apply text-[13px];
-}
-
-/* POSITION SIDENAV */
-:deep(.wallet-sb) {
-  @apply fixed top-[72px] right-6 w-[260px] z-60;
 }
 
 /* RESPONSIVE */

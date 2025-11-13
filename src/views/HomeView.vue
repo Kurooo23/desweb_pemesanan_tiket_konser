@@ -1,7 +1,8 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
-import SideNavSB from '@/components/SideNavSB.vue'
+import DrawerNav from '@/components/DrawerNav.vue'
+
 
 // background & gambar konser
 import bgHome from '@/assets/home_background.png'
@@ -146,7 +147,7 @@ const goToTicket = (slug) => {
       </main>
 
       <!-- SideNav -->
-      <SideNavSB v-model="sidebarOpen" extra-class="home-sb" />
+      <DrawerNav v-model="sidebarOpen" />
     </div>
   </div>
 </template>
@@ -190,6 +191,4 @@ const goToTicket = (slug) => {
 .card-desc         { @apply text-xs my-3 leading-relaxed; }
 .btn-buy           { @apply inline-block px-4 py-2 rounded bg-[#ffcc33] font-bold text-black text-xs; }
 
-/* Posisi khusus SideNav (via extra-class) */
-:deep(.home-sb) { @apply fixed top-[70px] right-6 z-50; }
 </style>
