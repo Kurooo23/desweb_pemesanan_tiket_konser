@@ -189,6 +189,6 @@ const goToTicket = (slug) => {
 .card-meta         { @apply text-sm mb-1; }
 .meta-label        { @apply font-semibold; }
 .card-desc         { @apply text-xs my-3 leading-relaxed; }
-.btn-buy           { @apply inline-block px-4 py-2 rounded bg-[#ffcc33] font-bold text-black text-xs; }
+.btn-buy           { @apply inline-block px-4 py-2 rounded bg-[#ffcc33] font-bold text-black text-xs cursor-pointer; }
 
 </style>
